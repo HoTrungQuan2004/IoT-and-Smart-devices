@@ -1,7 +1,7 @@
 # Farm Functions on Cloudflare Workers
 
 This project implements the cloud-side logic for the **Farm** IoT scenario from the *IoT for Beginners* curriculum, specifically for **Assignment 5: Migrate application to the cloud**.  
-Instead of using Azure Functions, this version uses **Cloudflare Workers** to expose HTTP endpoints that control the relay on a smart farm system.
+Instead of using Azure Functions, this version uses **Cloudflare Workers** to expose HTTP endpoints that control the relay on a smart farm system (because I can not register the student azure and I do not have visa to register free trial azure).
 
 ## 📦 Project Structure
 

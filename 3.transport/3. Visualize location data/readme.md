@@ -1,33 +1,21 @@
-# Adafruit Web App
 
-This web app fetches data from Adafruit IO and displays it using a secure serverless backend via Netlify.
+# IoT Data Dashboard
 
-## 🔗 Live App
+A web application that displays sensor data from Adafruit IO.
 
-[View Deployed App](https://your-app-name.netlify.app)
+## Features
+- Real-time sensor data display
+- Auto-refresh functionality
+- Clean, responsive interface
+- Secure API key storage
 
-## ⚙️ Technologies Used
+## Deployment
+This app is deployed on Replit and connects to Adafruit IO to fetch sensor data.
 
-- HTML/CSS/JavaScript
-- Adafruit IO
-- Netlify Functions
-- GitHub
+## Environment Variables
+- `AIO_USERNAME`: Adafruit IO username
+- `AIO_KEY`: Adafruit IO API key
+- `FEED_NAME`: Name of the data feed
 
-## 🔒 Security
-
-API key is stored as an environment variable on Netlify and accessed via a serverless function.
-
-## 📁 Project Structure
-my-adafruit-app/
-├── index.html
-├── style.css
-├── script.js
-└── netlify/functions/fetch-data.js
-
-
-## 🚀 Setup Instructions
-
-1. Clone repo
-2. Add `.env` with your Adafruit IO key
-3. Run locally with `netlify dev`
-4. Deploy with `netlify deploy`
+## Usage
+Visit the deployed URL to view the latest sensor readings. The data refreshes automatically every 30 seconds.

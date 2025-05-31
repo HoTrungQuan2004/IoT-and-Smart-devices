@@ -20,9 +20,10 @@ pip install setuptools
 ```bash
 python3 -m venv .venv
 ```
-- Active
+- Active and install requirement
 ```bash
 source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Run CounterFit

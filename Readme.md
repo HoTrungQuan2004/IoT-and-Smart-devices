@@ -1,4 +1,4 @@
-These assignments are using CounterFit
+These assignments are using CounterFit as virtual sensors instead of real sensors
 ### Setup:
 in root path (/workspaces/IoT-and-Smart-devices), run in terminal to create and active virtual environment
 ```bash

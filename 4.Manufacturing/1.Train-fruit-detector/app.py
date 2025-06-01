@@ -21,10 +21,12 @@ with open("labels.txt", "r") as f:
     labels = [line.strip() for line in f.readlines()]  # Example: ["Ripe", "Unripe"]
 
 # Function to get image from CounterFit
-def get_image_from_counterfit():
-    response = requests.get("http://localhost:5000/Camera")
+def get_image_from_counterfit(port="sensor_1"):
+    # Gọi endpoint đúng của CounterFit
+    url = f"http://localhost:5000/binary_sensor_data?port={port}"
+    response = requests.get(url)
 
-    # Kiểm tra xem có phải ảnh không
+    # Kiểm tra phản hồi
     content_type = response.headers.get("Content-Type", "")
     print("Status:", response.status_code, "| Content-Type:", content_type)
 
@@ -33,7 +35,7 @@ def get_image_from_counterfit():
     if "image" not in content_type:
         print("Không nhận được ảnh, đây là dữ liệu trả về:")
         print(response.text[:200])  # In thử 200 ký tự đầu
-        raise ValueError("Response is not an image. Check if CounterFit is running and returning an image.")
+        raise ValueError(f"Response is not an image. Check if CounterFit is running and port '{port}' is configured with a camera sensor.")
 
     # Nếu là ảnh thì tiếp tục xử lý
     img = Image.open(io.BytesIO(response.content))

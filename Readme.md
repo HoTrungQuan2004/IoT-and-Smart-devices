@@ -7,6 +7,10 @@ python -m venv .venv #can skip if already have one
 ```bash
 source .venv/bin/activate
 ```
+Install Counterfit:
+```bash
+pip install counterfit
+```
 To activate CounterFit, run in terminal:
 ```bash
 counterfit

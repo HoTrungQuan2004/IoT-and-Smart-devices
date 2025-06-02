@@ -15,3 +15,13 @@ To activate CounterFit, run in terminal:
 ```bash
 counterfit
 ```
+
+# Notes:
+If have "ssl" error when activate counterfit, downgrade python to python 3.11
+```bash
+sudo apt update
+sudo apt install -y software-properties-common
+sudo apt-apt-repository ppa:deadsnakes/ppa
+sudo apt update 
+sudo apt install python3.11 python3.11-venv python3.11-dev
+```

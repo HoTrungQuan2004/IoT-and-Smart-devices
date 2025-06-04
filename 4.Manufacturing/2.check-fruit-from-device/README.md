@@ -15,7 +15,7 @@
 7. Select the **TensorFlow.js** tab.
 8. Choose **Upload my model to the cloud** and click **Upload my model**.
 9. Copy the generated API URL (e.g., `https://teachablemachine.withgoogle.com/models/YOUR_MODEL_ID/`).  
-   _You’ll need this URL for `app.py`._
+   _You’ll need this URL for `virtual_device_app.py`._
 
 ---
 

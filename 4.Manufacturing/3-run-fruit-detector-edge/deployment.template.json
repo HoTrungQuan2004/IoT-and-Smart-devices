@@ -1,0 +1,30 @@
+{
+  "modulesContent": {
+    "$edgeAgent": {
+      "properties.desired": {
+        "modules": {
+          "iotedgefunctionmodule": {
+            "settings": {
+              "image": "<yourdockerhubusername>/iotedgefunctionmodule:latest",
+              "createOptions": ""
+            },
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always"
+          }
+        }
+      }
+    },
+    "$edgeHub": {
+      "properties.desired": {
+        "routes": {
+          "route": "FROM /messages/modules/*/outputs/* INTO $upstream"
+        },
+        "schemaVersion": "1.0"
+      }
+    },
+    "iotedgefunctionmodule": {
+      "properties.desired": {}
+    }
+  }
+}

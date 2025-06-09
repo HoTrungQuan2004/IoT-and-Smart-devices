@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "messages/events",
+      "connection": "IoTHubConnection",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ]
+}

@@ -1,4 +1,9 @@
-I'm using virtual distance sensor and camera sensor (counterfit) to do this assignment
+I'm using virtual distance sensor and camera sensor (counterfit) to do this assignment.
+
+I was able to use virtual sensors to measure distance and send fruit image (if distance is less than 200mm) to the model to recognize ripeness or not. There will be 3 values ​​sent to adafruitIO FEEDS:
+- The distance
+- Ripe or unripe (1 or 0)
+- Led control signal (1 or 0) (On if unripe, Off if ripe)
 # Set up
 - Install requirements:
 ```

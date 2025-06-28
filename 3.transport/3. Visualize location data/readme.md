@@ -1,21 +1,12 @@
+# GPS Data Visualization
 
-# IoT Data Dashboard
+This project visualizes GPS data on a map using Leaflet.js and OpenStreetMap, hosted on GitHub Pages.
 
-A web application that displays sensor data from Adafruit IO.
+## Instructions
+- The web app is built with HTML and JavaScript.
+- GPS data is stored in GeoJSON format within `index.html`.
+- Deployed using GitHub Pages at [https://github.com/HoTrungQuan2004/IoT-and-Smart-devices/edit/main/3.transport/3.%20Visualize%20location%20data/]).
 
-## Features
-- Real-time sensor data display
-- Auto-refresh functionality
-- Clean, responsive interface
-- Secure API key storage
-
-## Deployment
-This app is deployed on Replit and connects to Adafruit IO to fetch sensor data.
-
-## Environment Variables
-- `AIO_USERNAME`: Adafruit IO username
-- `AIO_KEY`: Adafruit IO API key
-- `FEED_NAME`: Name of the data feed
-
-## Usage
-Visit the deployed URL to view the latest sensor readings. The data refreshes automatically every 30 seconds.
+## Setup
+- Updated GPS coordinates in the `geojsonData` variable with data from the previous lesson.
+- No API key is required for this implementation.

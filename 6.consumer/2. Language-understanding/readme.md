@@ -1,4 +1,3 @@
-###Cancel Timer Assignment
 This repository contains a solution for the "Cancel the Timer" assignment from the IoT-For-Beginners lesson on language understanding. The implementation uses Rasa for natural language understanding (NLU) and AWS Lambda for a serverless application, without relying on Azure or LUIS.
 Instructions to Run
 

@@ -1,4 +1,4 @@
-# pip install rasa , so the code can be run
+
 import json
 import logging
 from rasa.core.agent import Agent
